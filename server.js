@@ -22,6 +22,11 @@ app.use("/fetch", fetch)
 app.use("/insert", insert)
 app.use("/update", update)
 app.use("/delete", remov)
+
+app.get('/',(req,res)=>{
+    res.send("1st page")
+})
+
 //assign port no
 app.listen(port, () => {
     console.log("Server listening port no:- ", port)
